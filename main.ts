@@ -1,5 +1,6 @@
 import { Command } from "@cliffy/command";
 import { Spinner } from "@std/cli/unstable-spinner";
+import { CompletionsCommand } from "@cliffy/command/completions";
 
 const program = new Command();
 
@@ -27,6 +28,10 @@ program.command("lint")
     console.log("\n", new TextDecoder().decode(stdout));
     spinner.stop();
   });
+
+program
+  .command("completions", new CompletionsCommand())
+  .parse(Deno.args);
 
 if (import.meta.main) {
   program.parse();
