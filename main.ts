@@ -1,4 +1,5 @@
 import { Command } from "commander";
+import { Spinner } from "@std/cli/unstable-spinner";
 
 const program = new Command();
 
@@ -10,6 +11,8 @@ program
 program.command("lint")
   .description("Lint the project using OpenCode")
   .action(async () => {
+    const spinner = new Spinner({ message: "Linting project..." });
+    spinner.start();
     const command = new Deno.Command("opencode", {
       args: [
         "run",
@@ -21,7 +24,8 @@ program.command("lint")
 
     const { code, stdout } = await command.output();
     console.assert(code === 0);
-    console.log(new TextDecoder().decode(stdout));
+    console.log("\n", new TextDecoder().decode(stdout));
+    spinner.stop();
   });
 
 if (import.meta.main) {
