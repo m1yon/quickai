@@ -1,4 +1,4 @@
-import { Command } from "commander";
+import { Command } from "@cliffy/command";
 import { Spinner } from "@std/cli/unstable-spinner";
 
 const program = new Command();

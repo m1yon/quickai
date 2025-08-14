@@ -4,8 +4,8 @@
     "link": "sudo ln -sf $(pwd)/quickai /usr/local/bin/quickai"
   },
   "imports": {
+    "@cliffy/command": "jsr:@cliffy/command@^1.0.0-rc.8",
     "@std/assert": "jsr:@std/assert@1",
-    "@std/cli": "jsr:@std/cli@^1.0.21",
-    "commander": "npm:commander@^14.0.0"
+    "@std/cli": "jsr:@std/cli@^1.0.21"
   }
 }
