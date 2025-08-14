@@ -30,9 +30,8 @@ program.command("lint")
   });
 
 program
-  .command("completions", new CompletionsCommand())
-  .parse(Deno.args);
+  .command("completions", new CompletionsCommand());
 
 if (import.meta.main) {
-  program.parse();
+  program.parse(Deno.args);
 }
