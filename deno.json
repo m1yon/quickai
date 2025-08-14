@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "build": "deno compile -A main.ts",
+    "link": "sudo ln -sf $(pwd)/quickai /usr/local/bin/quickai"
   },
   "imports": {
     "@std/assert": "jsr:@std/assert@1",
