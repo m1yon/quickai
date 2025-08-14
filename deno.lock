@@ -3,7 +3,6 @@
   "specifiers": {
     "jsr:@std/assert@1": "1.0.14",
     "jsr:@std/internal@^1.0.10": "1.0.10",
-    "npm:@clack/prompts@0.11": "0.11.0",
     "npm:commander@14": "14.0.0"
   },
   "jsr": {
@@ -18,35 +17,13 @@
     }
   },
   "npm": {
-    "@clack/core@0.5.0": {
-      "integrity": "sha512-p3y0FIOwaYRUPRcMO7+dlmLh8PSRcrjuTndsiA0WAFbWES0mLZlrjVoBRZ9DzkPFJZG6KGkJmoEAY0ZcVWTkow==",
-      "dependencies": [
-        "picocolors",
-        "sisteransi"
-      ]
-    },
-    "@clack/prompts@0.11.0": {
-      "integrity": "sha512-pMN5FcrEw9hUkZA4f+zLlzivQSeQf5dRGJjSUbvVYDLvpKCdQx5OaknvKzgbtXOizhP+SJJJjqEbOe55uKKfAw==",
-      "dependencies": [
-        "@clack/core",
-        "picocolors",
-        "sisteransi"
-      ]
-    },
     "commander@14.0.0": {
       "integrity": "sha512-2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA=="
-    },
-    "picocolors@1.1.1": {
-      "integrity": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="
-    },
-    "sisteransi@1.0.5": {
-      "integrity": "sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg=="
     }
   },
   "workspace": {
     "dependencies": [
       "jsr:@std/assert@1",
-      "npm:@clack/prompts@0.11",
       "npm:commander@14"
     ]
   }
