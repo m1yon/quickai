@@ -13,7 +13,7 @@ program.command("lint")
     const command = new Deno.Command("opencode", {
       args: [
         "run",
-        "Lint this repository",
+        `You are a software developer. Fix all lint errors and warnings.`,
         "--model",
         "anthropic/claude-sonnet-4-20250514",
       ],
